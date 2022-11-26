@@ -4,6 +4,10 @@
   background-color: var(--accent-color);
   background-size: cover;
   background-position: bottom center;
+
+  @include mobile {
+    padding: 50px 0px;
+  }
   // .order__container
 
   &__container {
@@ -17,6 +21,11 @@
   &__left {
     grid-column: 1/6;
     padding-left: 60px;
+
+    @include small-tablet {
+      grid-column: 12 span;
+      padding: 0px 10px;
+    }
   }
 
   // .order__right
@@ -24,6 +33,17 @@
   &__right {
     grid-column: 7 / end;
     padding-right: 60px;
+
+    @include small-tablet {
+      min-width: 80%;
+      grid-column: 12 span;
+      padding-right: 0;
+      justify-self: center;
+    }
+
+    @include mobile {
+      min-width: auto;
+    }
   }
   // .order__title
 
@@ -49,5 +69,8 @@
 
   &__form {
     max-width: 500px;
+    @include small-tablet {
+      max-width: auto;
+    }
   }
 }
