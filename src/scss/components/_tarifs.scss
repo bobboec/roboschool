@@ -1,0 +1,116 @@
+.tarifs {
+  padding-top: 0;
+  // .tarifs__container
+
+  &__container {
+  }
+
+  // .tarifs__title
+
+  &__title {
+  }
+
+  // .tarifs__list
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px;
+  }
+
+  // .tarifs__item
+
+  &__item {
+    grid-column: 4 span;
+    min-height: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border: 1px solid rgba(20, 16, 36, 0.2);
+    border-radius: 20px;
+
+    &-current {
+      border: 1px solid var(--dark-color);
+      background-color: var(--dark-color);
+      transform: scale(1);
+
+      .tarifs__caption {
+        color: var(--light-color);
+      }
+      .tarifs__price {
+        color: var(--light-color);
+      }
+      .tarifs__subtitle {
+        color: var(--light-color);
+      }
+    }
+  }
+
+  // .tarifs__caption
+
+  &__caption {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 60px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 160%;
+    text-align: center;
+    color: var(--dark-color);
+
+    &::before {
+      content: "";
+      display: block;
+      margin-right: 10px;
+      width: 20px;
+      height: 3px;
+      background-color: currentColor;
+    }
+    &::after {
+      content: "";
+      display: block;
+      margin-left: 10px;
+      width: 20px;
+      height: 3px;
+      background-color: currentColor;
+    }
+  }
+
+  // .tarifs__price
+
+  &__price {
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 160%;
+    text-align: center;
+    color: var(--dark-color);
+
+    @include tablet {
+      font-size: 38px;
+    }
+  }
+
+  // .tarifs__subtitle
+
+  &__subtitle {
+    margin-bottom: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    color: var(--dark-color);
+  }
+
+  // .tarifs__btn
+
+  &__btn {
+    margin-top: 61px;
+    min-width: 100%;
+  }
+}

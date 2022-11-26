@@ -1,0 +1,31 @@
+.burger {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  mix-blend-mode: normal;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  // background: rgba(255, 255, 255, 0.08);
+
+  &__line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 26px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: var(--light-color);
+    transform: translateX(-50%) translateY(-50%);
+
+    &:first-child {
+      margin-top: -6px;
+    }
+
+    &:last-child {
+      margin-top: 6px;
+      width: 13px;
+      right: 0;
+      transform: translateX(-100%) translateY(-50%);
+    }
+  }
+}

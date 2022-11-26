@@ -1,0 +1,26 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 0;
+
+  &__container {
+    @include flex-all-sb;
+  }
+
+  &__phone {
+    @include high-tablet {
+      margin-left: auto;
+      margin-right: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      mix-blend-mode: normal;
+      position: relative;
+      width: 44px;
+      height: 44px;
+      background: url("../../img/call.svg") center no-repeat;
+      font-size: 0;
+    }
+  }
+}
