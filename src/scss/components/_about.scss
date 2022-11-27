@@ -1,6 +1,4 @@
 .about {
-  padding-top: 120px;
-  padding-bottom: 120px;
   background-color: var(--light-color);
 
   // .about__desc
@@ -26,6 +24,10 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 40px;
+
+    @include mobile {
+      grid-template-columns: repeat(6, 1fr);
+    }
   }
 
   // .about__item

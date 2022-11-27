@@ -6,7 +6,7 @@ import Swiper, {
 Swiper.use([Navigation, Scrollbar]);
 
 const swiper = new Swiper('.trainers__content', {
-  slidesPerView: 4,
+  slidesPerView: 'auto',
   slidesPerColumnFill: 'row',
   spaceBetween: 40,
   scrollbar: {

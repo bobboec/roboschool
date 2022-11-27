@@ -2,6 +2,9 @@
   // .benefits__title
 
   &__title {
+    @include mobile {
+      margin-bottom: 50px;
+    }
   }
 
   // .benefits__list
@@ -10,6 +13,10 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 40px;
+
+    @include mobile {
+      grid-template-columns: repeat(6, 1fr);
+    }
   }
 
   // .benefits__item
@@ -30,6 +37,10 @@
     font-size: 24px;
     line-height: 160%;
     color: var(--dark-color);
+    @include mobile {
+      margin: 0;
+      margin-bottom: 10px;
+    }
   }
 
   // .benefits__desc
@@ -40,5 +51,9 @@
     font-size: 18px;
     line-height: 160%;
     color: var(--test-color);
+    @include mobile {
+      margin: 0;
+      margin-bottom: 30px;
+    }
   }
 }

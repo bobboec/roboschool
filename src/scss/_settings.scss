@@ -113,4 +113,8 @@ a {
 
 .section-offset {
   padding: 120px 0;
+
+  @include high-tablet {
+    padding: 75px 0;
+  }
 }
