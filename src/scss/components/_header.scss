@@ -4,9 +4,16 @@
   left: 0;
   width: 100%;
   padding: 30px 0;
+  @include mobile {
+    padding: 10px 0;
+  }
 
   &__container {
     @include flex-all-sb;
+
+    @include mobile {
+      align-items: center;
+    }
   }
 
   &__phone {
