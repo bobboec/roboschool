@@ -29,8 +29,13 @@
       transform: translateX(-100%) translateY(-50%);
     }
   }
+
+  @media (min-width: 992px) {
+    display: none;
+  }
 }
 .burger--active {
+  
   .burger__line {
     transform: translateX(-50%) translateY(-50%) rotateZ(45deg);
 
