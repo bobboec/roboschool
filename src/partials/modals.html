@@ -1,8 +1,51 @@
 <div class="graph-modal">
-  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="trainer-1">
-    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+  <div class="graph-modal__container popup" role="dialog" aria-modal="true" data-graph-target="trainer-1">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно">Закрыть</button>
     <div class="graph-modal__content">
-      <h1>asdasdas</h1>
+      <div class="popup__top">
+        <div class="popup__image">
+          <picture>
+            <source srcset="../img/trainers/trainer-1.avif" type="image/avif">
+            <source srcset="../img/trainers/trainer-1.webp" type="image/webp">
+            <img loading="lazy" src="../img/trainers/trainer-1.jpg" class="image" width="160" height="222" alt="Марина Орлова">
+          </picture>
+        </div>
+        <div class="popup__text">
+          <h4 class="popup__title">Марина Орлова</h4>
+          <p class="popup__subtitle">преподаватель по робототехнике</p>
+          <ul class="social list-reset">
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#fb-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" target="_blank" class="social__link">
+                <svg class="">
+                  <use xlink:href="img/sprite.svg#instagram-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="popup__bottom">
+        <div class="tabs" data-tabs="popup-tabs">
+          <ul class="tabs__nav">
+            <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button"></button></li>
+            <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button"></button></li>
+            <li class="tabs__nav-item"><button class="tabs__nav-btn" type="button"></button></li>
+          </ul>
+          <div class="tabs__content">
+            <div class="tabs__panel"></div>
+            <div class="tabs__panel"></div>
+            <div class="tabs__panel"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
