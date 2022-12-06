@@ -1,0 +1,73 @@
+.graph-modal {
+  // .graph-modal__container
+
+  &__container {
+    padding: 40px;
+  }
+
+  // .graph-modal__close
+
+  &__close {
+    top: 40px;
+    right: 75px;
+  }
+
+  // .graph-modal__content
+
+  &__content {
+  }
+}
+.popup {
+  // .popup__top
+
+  &__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+  }
+
+  // .popup__image
+
+  &__image {
+    width: 160px;
+    height: 222px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+  }
+
+  // .popup__text
+
+  &__text {
+  }
+
+  // .popup__title
+
+  &__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 160%;
+    color: var(--dark-color);
+  }
+
+  // .popup__subtitle
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--text-color);
+  }
+
+  // .popup__bottom
+
+  &__bottom {
+  }
+}
+
+

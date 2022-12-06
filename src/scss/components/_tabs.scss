@@ -1,0 +1,45 @@
+.tabs {
+  // .tabs__nav
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0;
+  }
+
+  // .tabs__nav-item
+
+  &__nav-item {
+  }
+
+  // .tabs__nav-btn
+
+  &__nav-btn {
+  }
+
+  // .tabs__content
+
+  &__content {
+  }
+
+  // .tabs__panel
+
+  &__panel {
+  }
+
+  // .tabs__descr
+
+  &__descr {
+  }
+
+  // .tabs__text
+
+  &__text {
+  }
+
+  // .tabs__descr-title
+
+  &__descr-title {
+  }
+}
