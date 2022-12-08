@@ -2,25 +2,38 @@
   // .tabs__nav
 
   &__nav {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: start;
-    padding: 0;
+    border-bottom: 1px solid rgba(20, 16, 36, 0.11);
   }
 
   // .tabs__nav-item
 
   &__nav-item {
+    flex: 0 1 33%;
   }
 
   // .tabs__nav-btn
 
   &__nav-btn {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    background-color: transparent;
+    border: 0;
+    color: #141024;
   }
 
   // .tabs__content
 
   &__content {
+    max-height: 354px;
+    overflow-y: scroll;
   }
 
   // .tabs__panel
@@ -36,10 +49,22 @@
   // .tabs__text
 
   &__text {
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: var(--dark-color);
   }
 
   // .tabs__descr-title
 
   &__descr-title {
+    display: block;
+    margin: 40px 0 20px 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 160%;
   }
 }
