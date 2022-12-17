@@ -2,22 +2,37 @@
   // .graph-modal__container
 
   &__container {
-    padding: 40px;
   }
 
   // .graph-modal__close
 
   &__close {
     top: 40px;
-    right: 75px;
+    right: 85px;
+    @include small-tablet {
+      top: 30px;
+      right: 65px;
+    }
   }
 
   // .graph-modal__content
 
   &__content {
   }
+
+  &::before {
+    @include tablet {
+      display: none;
+    }
+  }
 }
 .popup {
+  width: 100%;
+  max-width: 940px;
+  padding: 40px 50px 40px 40px;
+  @include small-tablet {
+    padding: 54px 30px 50px 30px;
+  }
   // .popup__top
 
   &__top {
@@ -33,6 +48,11 @@
     height: 222px;
     margin-right: 40px;
     margin-bottom: 40px;
+
+    @include mobile {
+      margin-right: 30px;
+      margin-bottom: 0px;
+    }
   }
 
   // .popup__text
@@ -67,7 +87,22 @@
   // .popup__bottom
 
   &__bottom {
+    &-content {
+      max-height: 354px;
+    }
+  }
+
+  .simplebar-vertical {
+    background: rgba(20, 16, 36, 0.08);
+    width: 5px;
+  }
+  .simplebar-scrollbar {
+    &::before {
+      left: 0;
+      right: 0;
+      opacity: 1;
+      background-color: var(--dark-color);
+      border-radius: 20px;
+    }
   }
 }
-
-

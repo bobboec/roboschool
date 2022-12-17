@@ -9,12 +9,23 @@
     align-items: center;
     justify-content: start;
     border-bottom: 1px solid rgba(20, 16, 36, 0.11);
+
+    @include mobile {
+      flex-wrap: wrap;
+    }
   }
 
   // .tabs__nav-item
 
   &__nav-item {
     flex: 0 1 33%;
+    @include mobile {
+      margin-right: 40px;
+      flex: 0 1 50%;
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
   }
 
   // .tabs__nav-btn
@@ -24,16 +35,24 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 160%;
-    background-color: transparent;
     border: 0;
-    color: #141024;
+    background-color: transparent;
+    color: var(--dark-color);
+    cursor: pointer;
+    &:focus {
+      background-color: transparent;
+      color: var(--accent-color);
+    }
+  }
+
+  &__nav-btn--active {
+    color: var(--accent-color);
   }
 
   // .tabs__content
 
   &__content {
     max-height: 354px;
-    overflow-y: scroll;
   }
 
   // .tabs__panel
@@ -44,6 +63,7 @@
   // .tabs__descr
 
   &__descr {
+    padding-right: 20px;
   }
 
   // .tabs__text
